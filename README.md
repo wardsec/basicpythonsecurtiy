@@ -1,9 +1,9 @@
 #### Basic Python Secuirty Kit ####
-  Generate WordList 
-  Generate MD5 Crpyto 
-  Generate SHA1 Crpyto 
-  Generate SHA256 Crpyto 
-  Generate SHA521 Crpyto  
-  MAKE A WEBSCRAPING 
-  VERIFY PHONE NUMBER 
-  VERIFY YOUR EXTERNAL IP
+  Generate WordList <p>
+  Generate MD5 Crpyto <p>
+  Generate SHA1 Crpyto <p>
+  Generate SHA256 Crpyto <p>
+  Generate SHA521 Crpyto  <p>
+  MAKE A WEBSCRAPING <p>
+  VERIFY PHONE NUMBER <p>
+  VERIFY YOUR EXTERNAL IP<p>
