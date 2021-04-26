@@ -27,8 +27,8 @@ O Que deseja fazer? Selecione:
     4)  Gerar SHA256 
     5)  Gerar SHA521 
     6)  Web Scraping   
-    7)  Verificador de Telefone(Verifica o país de origem) 
-    8)  Verificador de IP externo
+    7)  Verificador de Telefone(Verifica o país de origem)
+     >>>>>>>>>>> Digite a opção e confirme <<<<<<<<<<<<<<
    '''))
 
 if menu == 1:
@@ -36,47 +36,34 @@ if menu == 1:
     resultado = itertools.permutations(string, len(string))
     for c in resultado:
         print(''.join(c))
+        
 elif menu == 2:
     string = input("Digite o texto a ser gerado o Hash: ")
     resultado = hashlib.md5(string.encode('utf-8'))
     print('A hash md5 da string : ',string, 'é: ', resultado.hexdigest())
+    
 elif menu == 3:
     string = input("Digite o texto a ser gerado o Hash: ")
     resultado = hashlib.sha1(string.encode('utf-8'))
     print('A hash sha1 da string : ',string, 'é: ', resultado.hexdigest())
+    
 elif menu == 4:
     string = input("Digite o texto a ser gerado o Hash: ")
     resultado = hashlib.sha256(string.encode('utf-8'))
     print('A hash sha256 da string : ',string, 'é: ', resultado.hexdigest())
+    
 elif menu == 5:
     string = input("Digite o texto a ser gerado o Hash: ")
     resultado = hashlib.sha512(string.encode('utf-8'))
     print('A hash sha512 da string : ',string, 'é: ', resultado.hexdigest())
+    
 elif menu == 6:
     site =  requests.get(input('Insira o endereço do site Exemplo: https://www.linkedin.com: ')).content
     soup = BeautifulSoup(site, 'html.parser')
     print(soup.prettify)
+    
 elif menu == 7:
     phone = input('Digite o Telefone da seguinte forma +551140028922: ')
     phone_number = phonenumbers.parse(phone)
-    print(geocoder.description_for_number(phone_number, 'pt'))
-elif menu == 8:
- url = 'https://ipinfo.io/json'
-
-resposta = urlopen(url)
-
-dados = json.load(resposta)
-
-ip = dados['ip']
-org = dados['org']
-cit = dados['city']
-pais = dados['country']
-regiao = dados['region']
-post = dados['postal']
-time = dados['timezone']
-
-print('Detalhes de seu IP externo \n')
-
-print('IP: {4}\nRegião: {1}\nPais: {2}\nCidade: {3}\nOrg.: {0}'.format(org,regiao,pais,cit,ip))
-
+    print(geocoder.description_for_number(phone_number, 'pt'));
 
