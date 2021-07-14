@@ -26,8 +26,7 @@ O Que deseja fazer? Selecione:
     3)  Gerar SHA1
     4)  Gerar SHA256 
     5)  Gerar SHA521 
-    6)  Web Scraping   
-    7)  Verificador de Telefone(Verifica o país de origem)
+    6)  Web Scraping  
      >>>>>>>>>>> Digite a opção e confirme <<<<<<<<<<<<<<
    '''))
 
@@ -61,9 +60,4 @@ elif menu == 6:
     site =  requests.get(input('Insira o endereço do site Exemplo: https://www.linkedin.com: ')).content
     soup = BeautifulSoup(site, 'html.parser')
     print(soup.prettify)
-    
-elif menu == 7:
-    phone = input('Digite o Telefone da seguinte forma +551140028922: ')
-    phone_number = phonenumbers.parse(phone)
-    print(geocoder.description_for_number(phone_number, 'pt'));
 
