@@ -6,4 +6,4 @@
   Generate SHA521 Crpyto  <p>
   MAKE A WEBSCRAPING <p>
   VERIFY PHONE NUMBER <p>
-  VERIFY YOUR EXTERNAL IP<p>
+
